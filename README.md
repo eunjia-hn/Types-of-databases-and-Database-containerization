@@ -17,31 +17,3 @@ Bucket for logs/time‑series
 📦 Embedding Use for: profiles, product attributes, small nested data. \
 🔗 Referencing Use for: reusable entities, large subdocs, many‑to‑many. \
 🪣 Bucketing Use for: IoT, logs, metrics. 
-
-### 🐳 Docker Integration Architecture
-MongoDB is often deployed in containers for local development, CI pipelines, or microservice environments. \
-In production, Atlas replaces the need to run MongoDB inside your own containers — but containers still play a role.
-
-#### 🏭 Production Pattern
-```
-[ Dockerized Microservices ] 
-          | 
-          |  (TLS, VPC Peering, Private Endpoint)
-          |
-[ MongoDB Atlas Cluster ]
-```
-
-#### 📌 Summary Architecture Diagram
-```
-Client Apps
-   |
-API Layer / Microservices (Docker / Kubernetes)
-   |
-Secure Network (TLS + VPC Peering)
-   |
-MongoDB Atlas Cluster
-   ├── Replica Set
-   ├── Backups
-   ├── Monitoring
-   └── Optional Sharding
-```
