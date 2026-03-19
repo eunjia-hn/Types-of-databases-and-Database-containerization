@@ -20,3 +20,13 @@ Bucket for logs/time‑series
 📦 Embedding Use for: profiles, product attributes, small nested data. \
 🔗 Referencing Use for: reusable entities, large subdocs, many‑to‑many. \
 🪣 Bucketing Use for: IoT, logs, metrics. 
+
+
+
+
+
+
+### Docker
+```
+docker run -p 27017:27017 --name some-mongo -d mongo
+```
