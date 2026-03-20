@@ -11,7 +11,7 @@ Document databases store data in a non-relational format, typically using JSON-l
 **Real-Life Use Case:**  
 Think of a Social Media User Profile. Your profile might include basic text, a list of hobbies, and a gallery of photos, while a professional's profile might include job history and certifications. Because every user has a different "shape" of data, a document database like MongoDB allows the platform to store these varied profiles in one place without forcing everyone to have the exact same fields.
 
-### 🗂️ 2. Data Modeling Patterns
+** 🗂️ Data Modeling Patterns **
 📦 Embedding Use for: profiles, product attributes, small nested data.
 🔗 Referencing Use for: reusable entities, large subdocs, many‑to‑many.
 🪣 Bucketing Use for: IoT, logs, metrics. 
